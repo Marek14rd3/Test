@@ -1,0 +1,10 @@
+echo off
+echo/
+:start [ignored]
+echo hello %username%
+ping -n 1 www.google.com | find "TTL="
+for %a in (alpha beta) do (
+  echo %a
+)
+goto :start [ignored]
+echo done.
